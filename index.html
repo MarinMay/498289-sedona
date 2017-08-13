@@ -5,8 +5,113 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+  <header class="main-header">
+		<a class="main-header-logo"><img src="img/logo" width="140" height="70" alt="Логотип Седона">
+  	</a>
+  	<nav class="main-navigation">
+  		<ul class="site-navigation">
+  			<li><a href="information.html">Информация</a></li>
+  			<li><a href="photo-video">Фото и видео</a></li>
+  			<li><a href="sitemap.html">Карта штата</a></li>
+  			<li><a href="hotels.html">Гостиницы</a></li>
+  		</ul>
+  	</nav>
+  	<img src="img/welcome" width="1200" height="508" alt="Добро пожаловать в прекрасную Седону">
+  </header>
+  <main class="container">
+  	<h1 class="visually-hidden">Sity of Sedona</h1>
+  	<section class="Sedona-benefits">
+  		<h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+  		<p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+  		<ul class="Sedona-benefits-list">
+  			<li class="Sedona-benefits-item item-with-photo">
+  				<h3>Настоящий городок</h3>
+  				<span class="number"> - №1 -</span>
+ 	 				<p>Седона не атракцион для туристов - там течет своя жизнь.</p>
+ 	 				<img src="img/real-town" width="800" height="254" alt="Фото Седоны">
+ 	 					<ul class="real-town-list">
+ 	 						<li class="real-town-item">
+ 	 							<span class="real-town-item-name">Жилье</span>
+ 	 							<p>Рекомедуем пожить в настоящем мотеле, все как в кино!</p>
+ 	 						</li>
+ 	 						<li class="real-town-item">
+ 	 							<span class="real-town-item-name">Еда</span>
+ 	 							<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+ 	 						</li>
+ 	 						<li class="real-town-item">
+ 	 							<span class="real-town-item-name">Сувениры</span>
+ 	 							<p>Не только китайского, но и местного производства!</p>
+ 	 						</li>
+ 	 					</ul>
+ 	 			</li>
+ 	 			<li class="Sedona-benefits-item item-with-photo">
+ 	 				<h3>Там есть мост Дьявола</h3>
+ 	 				<span class="number"> - №2 -</span>
+ 	 				<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+ 	 				<img src="img/devil's-bridge" width="800" height="254" alt="Фото моста Дьявола">
+ 	 			</li>
+ 	 			<li class="Sedona-benefits-item">
+ 	 				<h3>Небольшая площадь</h3>
+ 	 				<span class="number"> - №3 -</span>
+ 	 				<p>Небольшая площадь Все достопримечательности находятся очень близко</p>
+ 	 			</li>
+ 	 			<li class="Sedona-benefits-item">
+ 	 				<h3>Красивая дорога</h3>
+ 	 				<span class="number"> - №4 -</span>
+ 	 				<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+ 	 			</li>
+ 	 			<li class="Sedona-benefits-item">
+ 	 				<h3>Мало туристов</h3>
+ 	 				<span class="number"> - №5 -</span>
+ 	 				<p>Большинство едет в Гранд Каньон и толпится там</p>
+ 	 			</li>
+ 	 		</ul>
+ 	 	</section>
+ 	 	<section class="hotel">
+ 	 		<h2 class="visually-hidden">поиск гостиницы в Седоне</h2>
+ 	 		<p> <b> Заинтересовались?</b><br>
+ 	 		Укажите предполагаемые даты поездки,<br>
+ 	 		и мы покажем вам лучшие предложения для гостиниц в седоне
+ 	 		</p>
+ 	 		<button type="button">Поиск гостиницы в седоне</button>
+ 	 	</section>
+ 	 	<section class="map">
+ 	 		<img src="img/map" width="1200" height="474" alt="Как проехать в Седону">
+ 	 	</section>
+ 	</main>
+	<footer class="main-footer">
+		<p class="footer-text">#VISITSEDONA</p>
+		<div class="footer-social">
+      <ul>
+        <li><a class="social-button" href="#">Twitter</a></li>
+        <li><a class="social-button" href="#">Facebook</a></li>
+        <li><a class="social-button" href="#">Youtube</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+    	<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html-academy" alt="HTML Academy"></a>
+    </div>
+  </footer>
+  <!--  <form class="hotel-search" action="https://echo.htmlacademy.ru" method="get" name="hotel-search">
+  	<legend>Поиск гостиницы в Седоне</legend>
+  	<label> Дата заезда
+  		<input type="date" name="arrival-date">
+  		<button><img src="img/calendar"></button>
+  	</label><br>
+  	<label>
+  		Дата выезда
+  		<input type="date" name="date-of-departure">
+  		<button><img src="img/calendar"></button>
+  	</label><br>
+  	<label>
+  		Взрослые
+  		<input type="number" name="number-of-adults">
+  	</label>
+  	<label>
+  		Дети
+  		<input type="number" name="number-of-child">
+  	</label></form><br>
+  	<input type="submit" value="найти">
+  </form> -->
   </body>
 </html>
