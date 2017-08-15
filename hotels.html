@@ -9,16 +9,16 @@
       <header class="main-header">
   	 	  <a class="main-header-logo" href="index.html">
           <img src="http://placehold.it/150x100" alt="Логотип Седона">
-      	</a>
+        </a>
 
-      	<nav class="main-navigation">
+        <nav class="main-navigation">
       		<ul class="site-navigation">
       			<li><a href="#">Информация</a></li>
       			<li><a href="#">Фото и видео</a></li>
       			<li><a href="#">Карта штата</a></li>
       			<li><a class="site-navigation-current">Гостиницы</a></li>
       		</ul>
-      	</nav>
+        </nav>
       </header>
 
       <main>
@@ -31,15 +31,15 @@
             <fieldset class="filter-infrastructure">
               <legend>Инфраструктура</legend>
               <label>
-                <input type="checkbox" name="infrastructure" value="pool" checked>Бассейн <br>
+                <input type="checkbox" name="infrastructure" value="pool" checked>Бассейн
               </label>
 
               <label>
-                <input type="checkbox" name="infrastructure" value="parking">Парковка <br>
+                <input type="checkbox" name="infrastructure" value="parking">Парковка
               </label>
 
               <label>
-                <input type="checkbox" name="infrastructure" value="wi-fi">WI-FI<br>
+                <input type="checkbox" name="infrastructure" value="wi-fi">WI-FI
               </label>
             </fieldset>
 
@@ -74,22 +74,26 @@
               <button type="submit">Показать</button>
             </fieldset>            
           </form>
-        </section> <!--end section.filters-->
+        </section> <!--end .filters-->
 
         <section class="selection-results">
           <h2 class="visually-hidden">Сортировка результатов поиска</h2>
-          <p>Найдено: 3</p>
+          <p>Найдено: 
+            <span class="number-results">3</span>
+          </p>
+
           <p>Сортировка:</p>
           <ul class="selection-result-type-list">
             <li class="selection-result-type-item selection-result-current">По цене</li>
             <li class="selection-result-type-item"><a href="#">По типу</a></li>
             <li class="selection-result-type-item"><a href="#">По рейтингу</a></li>
           </ul>
+
           <span class="selection-result-ranging">
             <button type="button">&#9650;</button>
             <button type="button">&#9660;</button>
           </span>
-        </section> <!--end section.selection-results-->
+        </section> <!--end .selection-results-->
 
         <section class="results">
           <h2 class="visually-hidden">Результаты поиска</h2> 
