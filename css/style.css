@@ -12,7 +12,7 @@
   line-height: 21px;
   font-weight: normal;
   color: #ffffff;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   background-color: #81b3d2;
 }
 
@@ -21,7 +21,7 @@
   line-height: 21px;
   font-weight: bold;
   color: #ffffff;
-  font-family: PT Sans;
+  font-family: "PT Sans";
 }
 
 .promo-title {
@@ -29,5 +29,5 @@
   line-height: 26px;
   font-weight: bold;
   color: #333333;
-  font-family: PT Sans;
+  font-family: "PT Sans";
 }
