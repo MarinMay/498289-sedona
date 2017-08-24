@@ -149,35 +149,38 @@
 		    </div> 
 		  </footer>
 
-	    <form class="hotel-search" action="https://echo.htmlacademy.ru" method="get" name="hotel-search">
-				<label for="arrival-date"> 
-					Дата заезда:
-				</label>	
-				<input type="text" name="arrival-date" placeholder="24 апреля 2017" id="arrival-date">
-				<button type="button"><p class="visually-hidden">Календарь</p></button>	  	
+	    <section class="search-form">
+	      <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
+	      <form class="hotel-search" action="https://echo.htmlacademy.ru" method="get" name="hotel-search">
+	        <label for="arrival-date"> 
+				  	Дата заезда:
+				  </label>	
+			  	<input type="text" name="arrival-date" placeholder="24 апреля 2017" id="arrival-date">
+			  	<button type="button"><span class="visually-hidden">Календарь</span></button>	  	
 
-				<label for="date-of-departure">
-					Дата выезда:
-				</label>	
-				<input type="text" name="date-of-departure" placeholder="4 июля 2017" id="date-of-departure">
-				<button type="button"><p class="visually-hidden">Календарь</p></button>						  	
+				  <label for="date-of-departure">
+				  	Дата выезда:
+				  </label>	
+				  <input type="text" name="date-of-departure" placeholder="4 июля 2017" id="date-of-departure">
+				  <button type="button"><span class="visually-hidden">Календарь</span></button>						  	
 
-				<label for="adults">
-					Взрослые:
-				</label>
-				<button type="button">-</button>
-				<input type="number" name="number-of-adults" id="adults" placeholder="2">
-				<button type="button">+</button>
+				  <label for="adults">
+				  	Взрослые:
+				  </label>
+				  <button type="button">-</button>
+				  <input type="number" name="number-of-adults" id="adults" placeholder="2">
+				  <button type="button">+</button>
 								  	
-				<label for="child">
+			  	<label for="child">
 					Дети:
-				</label>	
-				<button type="button">-</button>
-				<input type="number" name="number-of-child" id="child" placeholder="0">
-				<button type="button">+</button>				  	
+				  </label>	
+				  <button type="button">-</button>
+				  <input type="number" name="number-of-child" id="child" placeholder="0">
+				  <button type="button">+</button>				  	
 
-				<button type="submit">найти</button>
-			</form>
+				  <button type="submit">найти</button>
+			  </form>
+			</section>
     </div><!--end.container-->
   </body>
 </html>
