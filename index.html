@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Главная - Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet">    
   </head>
 
@@ -33,11 +35,12 @@
 		  	</section>
 
 		  	<section class="features">
+		  	  <h2 class="visually-hidden">Главное преимущество</h2>
 				  <div class="features-text">
-				  	<p class="features-text-title">
-				  		<b>Настоящий городок</b>
-				  	</p>
+				  	<h3 class="features-text-title">Настоящий городок</h3>
+
 				  	<p>&#8211; №1 &#8211;</p>
+
 				 	 	<p>Седона не атракцион для туристов - там течет своя жизнь.</p>
 				  </div>
 
@@ -46,34 +49,35 @@
 		 	 		</div>
 		 	 	</section>
 
-		 	 	<section class="our-services">				
+		 	 	<section class="our-services">
+		 	 	  <h2 class="visually-hidden">Сервис</h2>				
 					<ul class="our-services-list">
 		 	 			<li class="our-services-item">
-		 	 				<p><b>Жилье</b></p>
+		 	 				<h3 class="our-services-title">Жилье</h3>
+
 		 	 				<p>Рекомедуем пожить в настоящем мотеле, все как в кино!</p>
 		 	 			</li>
 
 						<li class="our-services-item">
-		 	 				<p><b>Еда</b></p>
+		 	 				<h3 class="our-services-title">Еда</h3>
 		 	 				<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 		 	 			</li>
 
 		 	 			<li class="our-services-item">
-		 	 				<p><b>Сувениры</b></p>
+		 	 				<h3 class="our-services-title">Сувениры</h3>
 		 	 				<p>Не только китайского, но и местного производства!</p>
 		 	 			</li>
 		 	 		</ul>
 		 	 	</section> <!--end .our-services-->
 
 		 	 	<section class="features">
+		 	 	  <h2 class="visually-hidden">Главное преимущество №2</h2>
 		 	 		<div class="features-photo">
 		 	 			<img src="img/brige.jpg" width="800" height="256" alt="Фото моста Дьявола">
 		 	 		</div>
 
 		 	 		<div class="features-text">
-		 	 			<p class="features-text-title">
-		 	 				<b>Там есть мост Дьявола</b>
-		 	 			</p>
+		 	 			<h3 class="features-text-title">Там есть мост Дьявола</h3>
 
 		 	 			<p>&#8211; №2 &#8211;</p>
 
@@ -82,30 +86,25 @@
 		 	 	</section>
 
 		 	 	<section class="advantages">
+		 	 	  <h2 class="visually-hidden">Другие преимущества</h2>
 		 	 		<div>
-		 	 			<p>
-		 	 				<b>Небольшая площадь</b>
-		 	 			</p>
+		 	 			<h3>Небольшая площадь</h3>
 
 		 	 			<p> &#8211; №3 &#8211;</p>
 
 		 	 			<p>Небольшая площадь Все достопримечательности находятся очень близко</p>
 		 	 		</div>
 		 	 		<div>
-		 	 			<p>
-		 	 			 	<b>Красивая дорога</b>
-		 	 			</p>
-
+		 	 			<h3>Красивая дорога</h3>
+		 	 			
 		 	 			<p>&#8211; №4 &#8211;</p>
 
 		 	 			<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 		 	 		</div>
 
 		 	 		<div>
-		 	 			<p>
-		 	 				<b>Мало туристов</b>
-		 	 			</p>
-
+		 	 			<h3>Мало туристов</h3>
+		 	 			
 		 	 			<p>&#8211; №5 &#8211;</p>
 
 		 	 			<p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -122,7 +121,7 @@
 		 	 		<p>Укажите предполагаемые даты поездки,<br>
 		 	 		и мы покажем вам лучшие предложения для гостиниц в седоне
 		 	 		</p>
-		 	 		<button type="button">Поиск гостиницы в седоне</button>
+		 	 		<button type="button" class="button hotel-search-button">Поиск гостиницы в седоне</button>
 		 	 	</section><!--end .hotel-->
 		 	 	
 		 	</main>
@@ -151,36 +150,41 @@
 
 	    <section class="search-form">
 	      <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
-	      <form class="hotel-search" action="https://echo.htmlacademy.ru" method="get" name="hotel-search">
-	        <label for="arrival-date"> 
-				  	Дата заезда:
-				  </label>	
-			  	<input type="text" name="arrival-date" placeholder="24 апреля 2017" id="arrival-date">
-			  	<button type="button"><span class="visually-hidden">Календарь</span></button>	  	
+	      <form class="form-hotel-search" action="https://echo.htmlacademy.ru" method="get" name="hotel-search">
+	        <p>
+	          <label for="arrival-date"> 
+				  	  Дата заезда:
+				    </label>	
+			  	  <input type="text" name="arrival-date" placeholder="24 апреля 2017" id="arrival-date">
+			  	  <button type="button"><span class="visually-hidden">Календарь</span></button>
+			  	</p>
 
-				  <label for="date-of-departure">
-				  	Дата выезда:
-				  </label>	
-				  <input type="text" name="date-of-departure" placeholder="4 июля 2017" id="date-of-departure">
-				  <button type="button"><span class="visually-hidden">Календарь</span></button>						  	
+			  	<p>
+			  	  <label for="date-of-departure">
+				  	  Дата выезда:
+				    </label>	
+				    <input type="text" name="date-of-departure" placeholder="4 июля 2017" id="date-of-departure">
+				    <button type="button"><span class="visually-hidden">Календарь</span></button>
+				  </p>
 
-				  <label for="adults">
-				  	Взрослые:
-				  </label>
-				  <button type="button">-</button>
-				  <input type="number" name="number-of-adults" id="adults" placeholder="2">
-				  <button type="button">+</button>
-								  	
-			  	<label for="child">
-					Дети:
-				  </label>	
-				  <button type="button">-</button>
-				  <input type="number" name="number-of-child" id="child" placeholder="0">
-				  <button type="button">+</button>				  	
+				  <p>
+				    <label for="adults">
+				  	  Взрослые:
+				    </label>
+				    <button type="button">-</button>
+				    <input type="number" name="number-of-adults" id="adults" placeholder="2">
+				    <button type="button">+</button>
+				    <label for="child">
+					    Дети:
+				    </label>	
+				    <button type="button">-</button>
+				    <input type="number" name="number-of-child" id="child" placeholder="0">
+				    <button type="button">+</button>		
+				  </p>
 
-				  <button type="submit">найти</button>
+				  <button type="submit" class="button form-hotel-search-button">найти</button>
 			  </form>
-			</section>
-    </div><!--end.container-->
+			</section><!--end .search-form-->
+    </div><!--end .container-->
   </body>
 </html>
