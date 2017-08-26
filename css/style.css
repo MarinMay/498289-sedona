@@ -334,20 +334,17 @@ a {
   background-repeat: space;
 }
 
-.four-star:before {
-  content: "";
+.four-star {
   width: 89px;
   height: 17px;
  }
 
-.three-star:before  {
-  content: "";
+.three-star {
   width: 65px;
   height: 17px;
 }
 
-.two-star:before  {
-  content: "";
-  width: 65px;
+.two-star {
+  width: 41px;
   height: 17px;
 }
