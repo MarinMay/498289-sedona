@@ -99,8 +99,17 @@
           </ul>
 
           <span class="selection-result-ranging">
-            <a href="#" class="selection-result-ranging-current">&#9650;</a>
-            <a href="#">&#9660;</a>
+            <a href="#">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path d="M5.5 0L0 10h11z"/>
+              </svg>
+            </a>
+
+            <a class="selection-result-ranging-current">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path d="M5.5 10L0 0h11"/>
+              </svg>
+            </a>
           </span>
         </section> <!--end .selection-results-->
 
@@ -121,8 +130,8 @@
                 <button type="button" class="button reservation-button">Забронировать</button>
               </div>
               <div class="rating">
-                <img src="http://placehold.it/80x20" alt="Класс 4 звезды">
-                <p>Рейтинг:8,5</p>
+                <span class="star four-star"> </span>
+                <p>Рейтинг: 8,5</p>
               </div>                        
             </li>
 
@@ -140,8 +149,8 @@
               </div>
 
               <div class="rating">
-                <img src="http://placehold.it/80x20" alt="Класс 3 звезды">
-                <p>Рейтинг:8,9</p>
+                <span class="star three-star">Три звезды</span>
+                <p>Рейтинг: 8,9</p>
               </div>             
             </li>
 
@@ -159,8 +168,8 @@
               </div>
 
               <div class="rating">
-                <img src="http://placehold.it/80x20" alt="Класс 2 звезды">
-                <p>Рейтинг:9,2</p>
+                <span class="star two-star">Две звезды</span>
+                <p>Рейтинг: 9,2</p>
               </div>              
             </li>  
           </ul>
