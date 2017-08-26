@@ -114,7 +114,8 @@ a {
   border: none;
 }
 
-.hotel-search-button {
+.hotel-search-button,
+.reservation-button {
   background-color: #766357; 
  }
 
@@ -159,7 +160,8 @@ a {
   color: #000000;
 }
 
-.form-hotel-search-button {
+.form-hotel-search-button,
+.more-button {
   background-color: #81b3d2; 
 }
 
@@ -197,4 +199,101 @@ a {
 .form-hotel-search button:not(.form-hotel-search-button) {
   background-color: #f2f2f2;
   border: none;	
+}
+
+.filters {
+  background-image: url("../img/filter-background.png");
+  background-color: #61778a;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.filter-hotels legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.filter-hotels fieldset {
+  border: none;
+}
+
+.filter-priсe {
+  border: solid 2px #ffffff;
+}
+
+.filter-priсe input {
+  background-color: transparent;
+  border: none;
+  font: inherit;
+  color: #ffffff;
+}
+
+.filter-hotels button {
+  background-color: transparent;
+  font: inherit;
+  border: solid 2px #ffffff;
+}
+
+.selection-results p:first-of-type {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.selection-results p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.selection-result-type-list {
+  list-style: none;
+}
+.selection-result-current {
+  font-size: 12px;
+  line-height: 18px;
+  color: #81b3d2;
+}
+.selection-result-type-item a {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: dotted 1px #81b3d2;
+}
+.selection-result-type-item a:hover,
+.selection-result-type-item a:hover {
+  color: #81b3d2;
+  border-bottom: dotted 1px #81b3d2;
+}
+
+.selection-result-type-item a:active {
+  color: #000000;
+  border-bottom: none;
+}
+
+.results-list a {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+.results-list a:hover,
+.results-list a:focus {
+  color: #81b3d2;
+}
+
+.results-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.reservation-button,
+.more-button {
+  font-size: 14px;
+  line-height: 21px;
+ }
+.rating p {
+  color: #666666;
+  background-color: #f2f2f2;
 }

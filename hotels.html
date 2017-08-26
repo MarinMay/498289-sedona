@@ -33,10 +33,11 @@
           <form class="filter-hotels" name="filter-hotels" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-infrastructure">
               <legend>Инфраструктура</legend>
+
               <label>
                 <input type="checkbox" name="infrastructure" value="pool" checked>Бассейн
               </label>
-
+          
               <label>
                 <input type="checkbox" name="infrastructure" value="parking">Парковка
               </label>
@@ -63,15 +64,17 @@
             </fieldset>
 
             <fieldset class="filter-hotel-costs">
-              <legend>Стоимость в сутки (р)</legend>
+              <legend>Стоимость в сутки (р):</legend>
 
-              <label class="filter-priсe">от 
-                <input type="number" name="price-min" placeholder="0">
-              </label >
+              <div class="filter-priсe">
+                <label>от 
+                  <input type="number" name="price-min" value="0">
+                </label >
 
-              <label  class="filter-priсe">до 
-                <input type="number" name="price-max" placeholder="3000">
-              </label >
+                <label>до 
+                  <input type="number" name="price-max" value="3000">
+                </label>
+              </div>
 
               <label>
                 <input type="range" min="0" max="3000" step="500" value="2500">
