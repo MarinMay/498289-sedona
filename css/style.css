@@ -203,7 +203,6 @@ a {
   margin-bottom: 47px;  
   text-align: center;  
   background-color: #eeeeee;
-
 }
 
 .advantages-list {
@@ -387,7 +386,6 @@ a {
   line-height: 0;
 }
 
-}
 .map + .footer-container {
   position: relative;
   margin-top: -120px;
@@ -567,10 +565,6 @@ a {
 	fill: #81b3d2;
 }
 
-/*.results {
-  padding: 0 73px;
-}*/
-
 .results-list{
   margin: 0;
   padding: 0;
@@ -594,6 +588,7 @@ a {
 .hotel-name {
   margin: -6px 0 11px 0;
 }
+
 .results-list a {
   font-size: 21px;
   line-height: 26px;
@@ -654,7 +649,7 @@ a {
 .four-star {
   width: 89px;
   height: 17px;
- }
+}
 
 .three-star {
   width: 65px;
