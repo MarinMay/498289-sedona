@@ -118,6 +118,7 @@
 
         <section class="hotel-search">
           <h2 class="visually-hidden">поиск гостиницы в Седоне</h2>
+
           <p> 
             <b> Заинтересовались?</b>
           </p>
@@ -125,8 +126,44 @@
           <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения для гостиниц в седоне
           </p>
+
           <button type="button" class="button hotel-search-button">Поиск гостиницы в седоне</button>
+
+          <section class="search-form">
+            <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
+
+            <form class="form-hotel-search" action="https://echo.htmlacademy.ru" method="get" name="hotel-search">            
+              <label for="arrival-date"> 
+                Дата заезда:
+              </label>  
+              <input  class="input-date" type="text" name="arrival-date" value="24 апреля 2017" id="arrival-date">
+              <button type="button" class="icon-button">К<span class="visually-hidden">Календарь</span></button>
+        
+              <label for="date-of-departure">
+                Дата выезда:
+              </label>  
+              <input class="input-date" type="text" name="date-of-departure" value="4 июля 2017" id="date-of-departure">
+              <button type="button" class="icon-button">К<span class="visually-hidden">Календарь</span></button>
+
+              <label for="adults">
+                Взрослые:
+              </label>
+              <button type="button" class="icon-button">-</button>
+              <input class="input-number" type="number" name="number-of-adults" id="adults" value="2">
+              <button type="button" class="icon-button">+</button>
+
+              <label for="child">
+                Дети:
+              </label>  
+              <button type="button" class="icon-button">-</button>
+              <input class="input-number" type="number" name="number-of-child" id="child" value="0">
+              <button type="button" class="icon-button">+</button>    
+
+              <button type="submit" class="button form-hotel-search-button">найти</button>
+            </form>
+          </section><!--end .search-form-->
         </section><!--end .hotel-->
+
         
       </main>
 
@@ -135,7 +172,7 @@
           <img src="img/map.png" width="1200" height="593" alt="Как проехать в Седону">
         </div>
 
-        <div class="footer-container under-map">
+        <div class="footer-container">
           <p class="footer-text">#VISITSEDONA</p>
           <div class="footer-social">
             <ul>
@@ -153,39 +190,6 @@
           </div> 
         </div><!--end .footer-container-->
       </footer>
-
-      <section class="search-form">
-        <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
-        <form class="form-hotel-search" action="https://echo.htmlacademy.ru" method="get" name="hotel-search">
-          <label for="arrival-date"> 
-            Дата заезда:
-          </label>  
-          <input  class="input-date" type="text" name="arrival-date" value="24 апреля 2017" id="arrival-date">
-          <button type="button" class="icon-button">К<span class="visually-hidden">Календарь</span></button>
-        
-          <label for="date-of-departure">
-            Дата выезда:
-          </label>  
-          <input class="input-date" type="text" name="date-of-departure" value="4 июля 2017" id="date-of-departure">
-          <button type="button" class="icon-button">К<span class="visually-hidden">Календарь</span></button>
-
-          <label for="adults">
-            Взрослые:
-          </label>
-          <button type="button" class="icon-button">-</button>
-          <input class="input-number" type="number" name="number-of-adults" id="adults" value="2">
-          <button type="button" class="icon-button">+</button>
-
-          <label for="child">
-            Дети:
-          </label>  
-          <button type="button" class="icon-button">-</button>
-          <input class="input-number" type="number" name="number-of-child" id="child" value="0">
-          <button type="button" class="icon-button">+</button>    
-
-          <button type="submit" class="button form-hotel-search-button">найти</button>
-        </form>
-      </section><!--end .search-form-->
     </div><!--end .container-->
   </body>
 </html>
