@@ -383,6 +383,11 @@ a {
   background-color: rgba(254, 254, 254, 0.9);
 }
 
+.map {
+  line-height: 0;
+}
+
+}
 .map + .footer-container {
   position: relative;
   margin-top: -120px;
