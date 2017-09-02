@@ -302,6 +302,7 @@ a {
   font-weight: bold;
   color: #000000;
 }
+
 .form-hotel-search-item {
   position: relative;
   display: flex;
@@ -374,7 +375,6 @@ a {
   background-position: 0 -4px;
 }
 
-
 .plus {
   position: absolute;
   top: 0;
@@ -392,7 +392,6 @@ a {
   background-repeat: no-repeat;
   background-position: -19px 0;
 }
-
 
 .minus:hover:after,
 .minus:focus:after  {
