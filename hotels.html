@@ -32,47 +32,59 @@
 
           <form class="filter-hotels" name="filter-hotels" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-infrastructure">
-              <legend>Инфраструктура</legend>
+              <legend class="legend legend-checkbox">Инфраструктура:</legend>
 
-              <label>
-                <input type="checkbox" name="infrastructure" value="pool" checked>Бассейн
+              <label class="filter-checkbox">
+                <input class="visually-hidden" type="checkbox" name="infrastructure" value="pool" checked>
+                <span class="checkbox-indicator"></span>
+                Бассейн    
               </label>
           
-              <label>
-                <input type="checkbox" name="infrastructure" value="parking">Парковка
+              <label class="filter-checkbox">
+                <input class="visually-hidden" type="checkbox" name="infrastructure" value="parking">
+                <span class="checkbox-indicator"></span>
+                Парковка
               </label>
 
-              <label>
-                <input type="checkbox" name="infrastructure" value="wi-fi">WI-FI
+              <label class="filter-checkbox">
+                <input class="visually-hidden" type="checkbox" name="infrastructure" value="wi-fi">
+                <span class="checkbox-indicator"></span>
+                WI-FI
               </label>
             </fieldset>
 
             <fieldset class="fillter-hotel-type">
-              <legend>Тип жилья</legend>
+              <legend class="legend legend-checkbox">Тип жилья:</legend>
 
-              <label>
-                <input type="checkbox" name="type" value="hotel" checked>Гостиница 
+              <label class="filter-checkbox">
+                <input class="visually-hidden" type="checkbox" name="type" value="hotel" checked>
+                <span class="checkbox-indicator"></span>
+                Гостиница                
               </label>
 
-              <label>
-                <input type="checkbox" name="type" value="motel" checked>Мотель 
+              <label class="filter-checkbox">
+                <input class="visually-hidden" type="checkbox" name="type" value="motel" checked>
+                <span class="checkbox-indicator"></span>
+                Мотель              
               </label>
 
-              <label>
-                <input type="checkbox" name="type" value="appartaments" checked>Аппартаменты
+              <label class="filter-checkbox">
+                <input class="visually-hidden" type="checkbox" name="type" value="appartaments" checked>
+                <span class="checkbox-indicator"></span>
+                Аппартаменты
               </label>
             </fieldset>
 
             <fieldset class="filter-hotel-costs">
-              <legend>Стоимость в сутки (р):</legend>
+              <legend class="legend">Стоимость в сутки (р):</legend>
 
               <div class="priсe-controls">
                 <label class="price-min">от 
-                  <input type="number" name="price-min" value="0">
+                  <input type="text" name="price-min" value="0">
                 </label>
 
                 <label class="price-max">до 
-                  <input type="number" name="price-max" value="3000">
+                  <input type="text" name="price-max" value="3000">
                 </label>
               </div>
 
@@ -81,8 +93,12 @@
                   <div class="bar"></div>
                 </div>
 
-                <div class="range-toggle range-toggle-min" tabindex="0"> </div>
-                <div class="range-toggle range-toggle-max" tabindex="0"> </div>
+                <div class="range-toggle range-toggle-min" tabindex="0"> 
+                  <span class="visually-hidden">Выбор минимального значения цены</span>
+                </div>
+                <div class="range-toggle range-toggle-max" tabindex="0">
+                  <span class="visually-hidden">Выбор максимального значения цены</span>
+                </div>
               </div>
 
               <button type="submit" class="button">Показать</button>
@@ -110,7 +126,7 @@
               </svg>
             </a>
 
-            <a class="selection-result-ranging-current">
+            <a class="selection-result-ranging-current" href="#">
               <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
               <path d="M5.5 10L0 0h11"/>
               </svg>
