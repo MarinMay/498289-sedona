@@ -332,23 +332,21 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 458px;
 }
 
 .half-line {
-  width: 226px;
   margin-bottom: 54px;
 }
 
 .half-line:last-of-type label {
-  padding-left: 52px;
+  padding-left: 48px;
 }
 
 .form-hotel-search label {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100px;
+  width: 112px;
   height: 38px;
   padding: 6px 0;
   text-align: left;
@@ -369,7 +367,7 @@ a {
   display: flex;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 420px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -377,6 +375,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   fill: #cacaca;
+  background-color: transparent;
 }
 
 .calendar:hover,
@@ -439,13 +438,14 @@ a {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 306px;
+  width: 346px;
   height: 38px;
-  padding-left: 10px;
-  margin-right: 40px;  
+  padding: 0 40px 0 10px;
 }
 
 .input-number {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;  
   width: 34px;
   height: 38px;
   padding-left: 10px;
@@ -496,6 +496,16 @@ a {
   border: 2px solid  #e5e5e5;
   outline: none;
 } 
+
+.main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+          flex-direction: column;
+}
 
 .map {
   width: 1200px;
@@ -621,7 +631,7 @@ a {
   fill: #81b3d2;
 }
 
-.logohtmlacademy:active path{
+.logohtmlacademy-icon:active path {
   fill: #bdbbbc;
 }
 
@@ -769,6 +779,7 @@ a {
 
 .priсe-controls input {
   width: 50px;
+  min-height: 32px;
   margin: 0;
   font: inherit;
   color: inherit;  
@@ -847,7 +858,7 @@ a {
   display: flex;  
   -webkit-box-sizing: border-box;  
           box-sizing: border-box;    
-  min-height: 86px;
+  height: 86px;
   padding: 0 73px 30px 73px; 
   -webkit-box-pack: justify; 
       -ms-flex-pack: justify; 
@@ -908,7 +919,7 @@ a {
   border-bottom: none;
 }
 
-.icon {
+.icon-sorting {
   fill: rgba(0, 0, 0, 0.3);
 }
 
@@ -918,18 +929,19 @@ a {
   height: 10px;
   margin-left: 7px;
   vertical-align: middle;
+  font-size: 0;
 }
 
-.selection-result-ranging-current path {
+.selection-result-ranging-current svg {
   fill: #81b3d2;
 }
 
-.selection-result-ranging a:focus path,
-.selection-result-ranging a:hover path {
+.selection-result-ranging a:focus svg,
+.selection-result-ranging a:hover svg {
   fill: #000000;
 }
 
-.selection-result-ranging a:active path {
+.selection-result-ranging a:active svg {
   fill: #81b3d2;
 }
 
