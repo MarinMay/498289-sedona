@@ -1,4 +1,4 @@
-﻿body {
+body {
   margin: 0px;
   padding: 0px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -508,16 +508,29 @@ a {
 }
 
 .map {
+  position: relative;
   width: 1200px;
   height: 593px;
   line-height: 0;
   background-color: #e2e8d2;
 }
 
+.map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.interactive-map {
+  position: relative;
+  z-index: 1;
+}
+
 .map + .footer-container {
   position: relative;
-  margin-top: -120px;
   z-index: 1;
+  margin-top: -120px;
 }
 
 .footer-container {
