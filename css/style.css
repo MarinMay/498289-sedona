@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -54,11 +54,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;  
   width: 1056px;  
   margin: 0 72px;
   padding: 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   list-style: none;  
 }
 
@@ -105,6 +105,11 @@ a {
   text-align: center;
 }
 
+.promo-img {
+  max-width: 100%;
+  height: auto;
+}
+
 .promo-container {
   width: 570px;
   margin: 50px auto 0 auto;
@@ -133,6 +138,9 @@ a {
 }
 
 .features-text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 400px;
   padding: 0 45px;
   text-align: center;
   color: #ffffff;
@@ -151,6 +159,9 @@ a {
 }
 
 .features-photo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 800px;
   line-height: 0;
 }
 
@@ -164,8 +175,8 @@ a {
   display: flex;
   margin: 0;
   padding: 0;  
-  list-style: none;
   text-align: center;
+  list-style: none;
 }
 
 .our-services-item {
@@ -201,13 +212,13 @@ a {
 }
 
 .our-services-item p {
-  padding: 0 50px 0 50px;
   margin: 0 0 82px 0;
+  padding: 0 50px 0 50px;  
 }
 
 .advantages {
-  padding-bottom: 40px;
   margin-bottom: 47px;  
+  padding-bottom: 40px;  
   text-align: center;  
   background-color: #eeeeee;
 }
@@ -235,8 +246,8 @@ a {
 }
 
 .advantages p {
-  margin: 20px auto;
   width: 270px;
+  margin: 20px auto;  
 }
 
 .hotel-search {
@@ -257,7 +268,7 @@ a {
 }
 
 .button {  
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -290,22 +301,27 @@ a {
 
 .hotel-search-button:active,
 .reservation-button:active {
-  background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;  
 }
 
 .search-form {
   position: absolute;
   bottom: -396px;
   left: 316px;
-  min-height: 396px;
-  width: 568px;
+  z-index: 2;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  min-height: 396px;
+  width: 568px;  
   padding: 55px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-          box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+          box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);  
+}
+
+.search-form-show {
+  display: none;
 }
 
 .form-hotel-search {
@@ -328,10 +344,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 29px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 29px;
 }
 
 .half-line {
@@ -355,19 +371,19 @@ a {
 .icon-button {
   width: 40px;
   height: 38px;
-  padding: 0;
   margin: 0;  
+  padding: 0;  
   background-color: #f2f2f2;
   border: none; 
 }
 
 .calendar {
+  position: absolute;
+  top: 0;
+  left: 420px;  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  top: 0;
-  left: 420px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -394,14 +410,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  font-size: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 0;
   fill: #a9a9a9;
 }
 
@@ -448,10 +463,8 @@ a {
           box-sizing: border-box;  
   width: 34px;
   height: 38px;
+  margin: 0 40px;  
   padding-left: 10px;
-  margin: 0 40px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;  
 }
 
 .form-hotel-search-button {
@@ -473,8 +486,8 @@ a {
 
 .form-hotel-search-button:active,
 .more-button:active {
+  color: rgba(255, 255, 255, 0.3);  
   background-color: #5496bd;
-  color: rgba(255, 255, 255, 0.3);
 }
 
 .form-hotel-search input {
@@ -537,15 +550,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;  
-  min-height: 120px;
-  width: 1200px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;  
   -webkit-box-align: center;  
       -ms-flex-align: center;  
-          align-items: center;
-          vertical-align: middle;
+          align-items: center;  
+  min-height: 120px;
+  width: 1200px;
+  vertical-align: middle; 
   background-color: rgba(254, 254, 254, 0.9);
 }
 
@@ -563,30 +576,30 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 150px;
-  margin: 0;
-  padding: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  list-style: none;
+  width: 150px;
+  margin: 0;
+  padding: 0;  
   text-align: center;
+  list-style: none;  
 }
 
 .social-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;  
-  width: 46px;
-  height: 48px; 
   -webkit-box-align: center; 
       -ms-flex-align: center; 
           align-items: center; 
   -webkit-box-pack: center; 
       -ms-flex-pack: center; 
-          justify-content: center;
+          justify-content: center;  
+  width: 46px;
+  height: 48px; 
   background-color: #81b3d2;
 }
 
@@ -606,15 +619,15 @@ a {
 .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;  
-  width: 200px;
-  margin: 0 100px 0 auto;
-  -webkit-box-align: center;
+  display: flex; 
+    -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 200px;
+  margin: 0 100px 0 auto; 
 }
 
 .copyright-text {
@@ -629,14 +642,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;  
-  width: 116px;
-  height: 41px; 
   -webkit-box-align: center; 
       -ms-flex-align: center; 
           align-items: center; 
   -webkit-box-pack: center; 
       -ms-flex-pack: center; 
-          justify-content: center;
+          justify-content: center;  
+  width: 116px;
+  height: 41px; 
 }
 
 .logohtmlacademy:hover path,
@@ -649,9 +662,9 @@ a {
 }
 
 .filters {
-  min-height: 217px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;  
+          box-sizing: border-box;   
+  min-height: 217px; 
   padding: 27px 73px 0 73px;
   font-size: 14px;
   line-height: 21px;
@@ -711,8 +724,8 @@ a {
 .filter-checkbox {
   position: relative;
   display: block;
+  margin-bottom: 24px;  
   padding-left: 40px;
-  margin-bottom: 24px;
   cursor: pointer;
 }
 
@@ -777,9 +790,9 @@ a {
 }
 
 .priсe-controls label {
+  display: inline-block;  
   width: 90px;
   padding-left: 65px;
-  display: inline-block;
   font-size: 14px;
   line-height: 32px;
   vertical-align: top;
@@ -851,8 +864,8 @@ a {
   min-height: 38px;
   margin: 0 0 0 86px;
   padding: 6px 34px;
-  background-color: transparent;
   font: inherit;
+  background-color: transparent;
   border: 2px solid  #ffffff;
   border-radius: 2px;
   outline: none;
@@ -941,8 +954,8 @@ a {
   width: 11px;
   height: 10px;
   margin-left: 7px;
+  font-size: 0;  
   vertical-align: middle;
-  font-size: 0;
 }
 
 .selection-result-ranging-current svg {
@@ -968,14 +981,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 90px;
-  padding: 30px 73px 30px 73px;  
   -webkit-box-pack: justify;  
       -ms-flex-pack: justify;  
           justify-content: space-between;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
-          align-items: stretch;
+          align-items: stretch;  
+  min-height: 90px;
+  padding: 30px 73px 30px 73px;  
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1039,22 +1052,22 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;  
-  margin: 0;
-  padding: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end;
+          align-items: flex-end;  
+  margin: 0;
+  padding: 0;
 }
 
 .star {
   margin: 0;
+  background-color: #ffffff;   
   background-image: url("../img/star.svg");
   background-repeat: space;
-  background-color: #ffffff; 
 }
 
 .rating-value {
