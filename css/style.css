@@ -131,8 +131,6 @@ img {
 }
 
 .features {  
-  position: relative;
-  z-index: 5;
   display: -webkit-box;  
   display: -ms-flexbox;  
   display: flex;
@@ -172,11 +170,6 @@ img {
 
 .features-text p {
   margin: 23px auto;
-}
-
-.our-services {
-  position: relative;
-  z-index: 5;
 }
 
 .our-services-list {
@@ -227,8 +220,6 @@ img {
 }
 
 .advantages {
-  position: relative;
-  z-index: 5;
   margin-bottom: 49px;  
   padding-bottom: 40px;  
   text-align: center;  
@@ -264,7 +255,6 @@ img {
 
 .hotel-search {
   position: relative;
-  z-index: 5;
   padding: 0 72px;
   text-align: center;
 }
@@ -332,39 +322,30 @@ img {
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
           box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15); 
-  -webkit-animation-name: bounce; 
-  animation-name: bounce; 
+  -webkit-animation-name: emerging; 
+  animation-name: emerging; 
   -webkit-animation-duration: 1s; 
           animation-duration: 1s;
 }
 
-@-webkit-keyframes bounce {
+@-webkit-keyframes emerging {
   0%{
-    -webkit-transform: translateY(-400px);
-            transform: translateY(-400px);
-  }
-  25% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-  100%{
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes bounce {
-  0% {
-    -webkit-transform: translateY(-400px);
-            transform: translateY(-400px);
-  }
-  25% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);    
+    -webkit-transform: scaleX(1) scaleY(0);
+            transform: scaleX(1) scaleY(0);
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+  }
+}
+@keyframes emerging {
+  0%{
+    -webkit-transform: scaleX(1) scaleY(0);
+            transform: scaleX(1) scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
   }
 }
 
