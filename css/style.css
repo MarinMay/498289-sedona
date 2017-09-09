@@ -958,6 +958,7 @@ img {
 }
 
 .selection-result-current {
+  padding-left: 3px;
   font-size: 12px;
   line-height: 18px;
   color: #81b3d2;
@@ -983,10 +984,6 @@ img {
 
 .icon-sorting {
   fill: rgba(0, 0, 0, 0.3);
-}
-
-.selection-result-ranging {
-
 }
 
 .selection-result-ranging a {
