@@ -1,6 +1,6 @@
 ﻿var button = document.querySelector(".hotel-search-button");
 var hotel = document.querySelector(".search-form");
-var form = document.querySelector(".form-hotel-search");
+var form = hotel.querySelector("form");
 var arrivalDate = document.querySelector("[name=arrival-date]");
 var dateOfDeparture = document.querySelector("[name=date-of-departure]");
 var adults = document.querySelector("[name=number-of-adults]");
@@ -21,18 +21,21 @@ button.addEventListener("click", function (evt) {
     dateOfDeparture.value = storageDateOfDeparture;
     adults.value = storageAdults;
     child.value = storageChild;
-  };
+  }
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!arrivalDate && !dateOfDeparture && !adults && !child) {
-  evt.preventDefault();
+  if (!arrivalDate || !dateOfDeparture || !adults || !child) { 
+    evt.preventDefault();
+    hotel.classList.remove("modal-error");
+    hotel.offsetWidth = hotel.offsetWidth;
+    hotel.classList.add("modal-error");
   } 
   else {
-  localStorage.setItem("arrivalDate", arrivalDate.value);
-  localStorage.setItem("dateOfDeparture", dateOfDeparture.value);
-  localStorage.setItem("adults", adults.value);
-  localStorage.setItem("child", child.value);
+    localStorage.setItem("arrivalDate", arrivalDate.value);
+    localStorage.setItem("dateOfDeparture", dateOfDeparture.value);
+    localStorage.setItem("adults", adults.value);
+    localStorage.setItem("child", child.value);
   }
 });
 
