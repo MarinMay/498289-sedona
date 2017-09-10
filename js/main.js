@@ -15,6 +15,9 @@ hotel.classList.add("search-form-close");
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
   hotel.classList.toggle("search-form-close");
+  if (hotel.classList.contains("modal-error")) {
+    hotel.classList.remove("modal-error");
+  }
   arrivalDate.focus();
   if (storageArrivalDate || storageDateOfDeparture || storageAdults || storageChild) {
     arrivalDate.value = storageArrivalDate;
@@ -40,9 +43,12 @@ form.addEventListener("submit", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      if (!hotel.classList.contains("search-form-close")) {
-        hotel.classList.add("search-form-close");
-      }
+  if (evt.keyCode === 27) {
+    if (!hotel.classList.contains("search-form-close")) {
+      hotel.classList.add("search-form-close");
     }
-  });
+    if (hotel.classList.contains("modal-error")) {
+      hotel.classList.remove("modal-error");
+    }
+  }
+});
