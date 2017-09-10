@@ -25,7 +25,7 @@ button.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!arrivalDate || !dateOfDeparture || !adults || !child) { 
+  if (!arrivalDate.value || !dateOfDeparture.value || !adults.value || !child.value) { 
     evt.preventDefault();
     hotel.classList.remove("modal-error");
     hotel.offsetWidth = hotel.offsetWidth;
