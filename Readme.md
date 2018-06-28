@@ -4,7 +4,7 @@
 * Наставник: `Ольга Вадясова`.
 
 
-Опубликованная версия: https://marina-vaganova.github.io/Sedona-fix/
+Опубликованная версия: https://mairiv.github.io/Sedona-fix/
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
